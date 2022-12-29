@@ -11,4 +11,4 @@ class Solution:
         return dict1 == dict2
 
 
-print(Solution.isAnagram('','abc',''))
+print(Solution.isAnagram('','abc','cba'))
