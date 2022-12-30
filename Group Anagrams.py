@@ -4,7 +4,7 @@ hashmap={}
 for word in strs:
     value=1
     for char in word:
-        value=value*ord(char)
+        value=value*hash(char)
     if value in hashmap:
         hashmap[value].append(word)
     else:
