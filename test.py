@@ -1,3 +1,5 @@
-dic={1:11,2:22}
+nums=[1,2,3,4]
 
-print(dic[2])
+
+for i in range(len(nums)-1,-1,-1):
+    print(nums[i])
