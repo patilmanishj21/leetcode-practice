@@ -29,13 +29,6 @@ There is at least one word in s.
 
 def reversethewords(s):
     return " ".join(s.split()[::-1])
-    
-
-
-
-
-
-
 
 s = "hello world"
 print(reversethewords(s))
