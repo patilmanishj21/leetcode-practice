@@ -28,11 +28,11 @@ def containerWithMostWater(height):
     max_area=0
     while start< end:
         area=min(height[start],height[end])*(end-start)
-        
-        if height[left] < height[right]:
-            left += 1
+
+        if height[start] < height[end]:
+            start += 1
         else:
-            right -= 1
+            end -= 1
 
         max_area=max(area, max_area)
 
