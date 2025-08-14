@@ -42,9 +42,30 @@ def string_compression(chars):
     #         count[char]+=1
     #     else:
     #         count[char]=1
-
+    index=0
     read=0
-    write=0
+
+    while read< len(chars):
+        curr_char=chars[read]
+        count=0
+        while read< len(chars) and chars[read]== curr_char:
+            count+=1
+            read+=1
+        chars[index]=curr_char
+        index+=1
+        if count>1:
+            
+            for char in count:
+                chars[index]=char
+                index+=1
+        return index
+
+
+        
+
+
+
+
 
     
         
@@ -52,5 +73,5 @@ def string_compression(chars):
     
 
 
-chars=["a","a","b","b","b","b","c"]
+chars=["a","a","b","b","b","b"]
 print(string_compression(chars))
