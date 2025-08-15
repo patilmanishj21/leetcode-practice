@@ -44,7 +44,9 @@ def containerWithMostWater(height):
 # height=[1,1]
 # height = [4, 3, 2, 1, 4]
 
-height=[8,7,2,1]
+#height=[8,7,2,1]
+
+height=[3,3,4]
 
 
 
