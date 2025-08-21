@@ -57,7 +57,7 @@ def sol2(s,k):
             count -= 1
         # add the effect of the new character coming in
         if s[i] in vowels:
-            count += 1
+            count +=
         # update max
         max_count = max(max_count, count)
 
